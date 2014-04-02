@@ -1,0 +1,16 @@
+<h1>Learn How to Program</h1>
+
+<h2>Your Current Lesson:</h2>
+
+<p><%= @lesson.name %></p>
+
+<p><%= @lesson.content %></p>
+
+<p><a href="/lessons/<%= @lesson.id %>/edit">Edit.</a></p>
+<p><a href="/lessons/<%= @lesson.id %>"
+    data-confirm="Are you sure?"
+    data-method="delete"
+    rel="nofollow">Delete.</a></p>
+
+
+<p><a href="/lessons">Return to the Homepage.</a></p>

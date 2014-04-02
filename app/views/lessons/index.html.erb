@@ -1,0 +1,23 @@
+<h1>Learn how to program</h1>
+
+<h2>Lessons</h2>
+
+<ul>
+  <% @lessons.each do |lesson| %>
+  <li>
+    <a href="/lessons/<%= lesson.id %>">
+      <%= lesson.name %>
+    </a>
+  </li>
+  <% end %>
+</ul>
+
+
+<h4>Add a Lesson:</h4>
+<form action="/lessons" method="post">
+  <label for name="lessons_name">Name</label><br>
+  <input id="lessons_name" name="name" type="text"><br>
+  <label for "lessons_content">Content</label><br>
+  <textarea id="lessons_content" name="content" type="textarea">Enter Content Here:</textarea><br>
+  <button>Create New Lesson</button>
+</form>

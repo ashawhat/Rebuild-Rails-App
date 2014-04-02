@@ -1,0 +1,19 @@
+
+development:
+  adapter: postgresql
+  database: learn_to_program_development
+
+
+
+test:
+  adapter: postgresql
+  database: learn_to_program_test
+
+
+# production:
+#   adapter: postgresql
+#   encoding: unicode
+#   database: learn_to_program_production
+#   pool: 5
+#   username: learn_to_program
+#   password:
