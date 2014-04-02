@@ -1,7 +1,10 @@
 LearnToProgram::Application.routes.draw do
-  match('lessons', { :via => :get, :to => 'lesson#index'})
-   match('lessons', { :via => :get, :to => 'lesson#new'})
-   match('lessons', { :via => :post, :to => 'lesson#create'})
-   match('lessons/:id', { :via => :get, :to => 'lesson#show'})
-   match('lessons/:id', { :via => :delete, :to => 'lesson#destroy'})
+  match('lessons', {:via => :get, :to => 'lessons#index'})
+  match('lessons/new', {:via => :get, :to => 'lessons#new'})
+  match('lessons', {:via => :post, :to => 'lessons#create'})
+  match('lessons/:id', {:via => :get, :to => 'lessons#show'})
+  match('lessons/:id/edit', { :via => :get, :to => 'lessons#edit'})
+  match('lessons/:id', {:via => [:patch, :put], :to => 'lessons#update'})
+  match('lessons/:id', {:via => :delete, :to => 'lessons#destroy'})
 end
+
