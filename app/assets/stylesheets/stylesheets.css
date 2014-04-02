@@ -1,0 +1,17 @@
+body{
+  background-color: #FFFFCC;
+  width: 960px;
+  margin: 0 auto;
+}
+
+li{
+  list-style-type: none;
+}
+
+a:hover{
+  color: red;
+}
+
+.image{
+  float: right;
+}
